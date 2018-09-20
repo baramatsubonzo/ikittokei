@@ -1,6 +1,10 @@
-  <%@posts.each do |post| %>
-  <%= link_to (image_tag post.image.url(:medium)) , post%>
-  <h2>
-    <%= link_to post.title, post %>
-  </h2>
-  <% end %>
+<div id="posts" class="transitions-enabled">
+    <%@posts.each do |post| %>
+    <div class="box panel panel-default">
+      <%= link_to (image_tag post.image.url) , post%>
+      <div class="panel-body">
+        <h2><%= link_to post.title, post %></h2>
+      </div>
+    </div>
+    <% end %>
+</div>

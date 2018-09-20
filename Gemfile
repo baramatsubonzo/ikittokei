@@ -79,3 +79,6 @@ gem 'autoprefixer-rails', '6.0.3'
 #画像投稿機能の追加
 gem 'paperclip', '~> 6.1'
 gem 'rmagick'
+
+#画像のレイアウト
+gem 'masonry-rails', '~> 0.2.4'

@@ -1,13 +1,22 @@
-<%= image_tag @post.image.url(:medium)%>
-
-<h1>
-  <%= @post.title %>
-</h1>
-
-<p>
-  <%= @post.description %>
-</p>
-
-<%= link_to "戻る", root_path %>
-<%= link_to "編集", edit_post_path %>
-<%= link_to "削除", post_path, method: :delete, data: { confirm: "本当に削除しますか？" }%>
+<div id="post_show" class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-default">
+      <div class="panel-heading post_image">
+        <%= image_tag @post.image.url(:medium)%>
+      </div>
+        <div class="panel-body">
+          <h1><%= @post.title %></h1>
+          <p> <%= @post.description %></p>
+        </div>
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-md-6 btn-group pull-right">
+                <%= link_to "戻る", root_path , class:"btn btn-default"%>
+                <%= link_to "編集", edit_post_path , class: "btn btn-default"%>
+                <%= link_to "削除", post_path, method: :delete, data: { confirm: "本当に削除しますか？" }, class: "btn btn-default"%>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

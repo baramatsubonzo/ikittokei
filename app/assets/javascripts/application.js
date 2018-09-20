@@ -17,3 +17,14 @@
 
 //= require jquery3
 //= require bootstrap-sprockets
+
+//= require masonry/jquery.masonry
+
+$(function(){
+
+  $('#posts').masonry({
+    itemSelector: '.box',
+    isFitWidth: true
+  });
+
+});
