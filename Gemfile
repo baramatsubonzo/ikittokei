@@ -75,3 +75,7 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1', '>= 4.1.3'
 #bootstrapのエラー対策
 gem 'autoprefixer-rails', '6.0.3'
+
+#画像投稿機能の追加
+gem 'paperclip', '~> 6.1'
+gem 'rmagick'
