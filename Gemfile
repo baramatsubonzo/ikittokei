@@ -82,3 +82,6 @@ gem 'rmagick'
 
 #画像のレイアウト
 gem 'masonry-rails', '~> 0.2.4'
+
+#パスワードのハッシュ化
+gem 'bcrypt',         '3.1.12'
