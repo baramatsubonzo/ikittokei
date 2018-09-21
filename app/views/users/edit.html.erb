@@ -3,6 +3,7 @@
   <h1>ユーザー編集</h1>
   <%= render 'form'%>
 
-  <%= link_to "キャンセル", user_path%>
+  <%= link_to "キャンセル", user_path, class: "btn btn-default"%>
+  <%= link_to "削除", user_path, method: :delete, data: { confirm: "本当に削除しますか？" }, class: "btn btn-default"%>
 
 </div>

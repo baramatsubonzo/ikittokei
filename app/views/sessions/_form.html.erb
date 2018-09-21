@@ -1,0 +1,13 @@
+<%= simple_form_for(:session, url: login_path) do |f| %>
+
+<div class="form-group">
+  <%= f.input :email, input_html: { class: 'form-control' }%>
+</div>
+<div class="form-group">
+  <%= f.input :password, input_html: { class: 'form-control' }%>
+</div>
+
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+
+<p>新しいユーザーですか? <%= link_to "新規登録はこちら！", signup_path %></p>
