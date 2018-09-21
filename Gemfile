@@ -85,3 +85,5 @@ gem 'masonry-rails', '~> 0.2.4'
 
 #パスワードのハッシュ化
 gem 'bcrypt',         '3.1.12'
+#js対策
+gem 'jquery-turbolinks'

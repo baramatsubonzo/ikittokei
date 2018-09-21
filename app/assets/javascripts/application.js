@@ -12,14 +12,12 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
-//= require_tree .
 
 //= require jquery3
-//= require bootstrap-sprockets
-
 //= require masonry/jquery.masonry
-
+//= require jquery.turbolinks
+//= require_tree .
+//= require bootstrap-sprockets
 $(function(){
 
   $('#posts').masonry({
@@ -28,3 +26,6 @@ $(function(){
   });
 
 });
+
+
+//= require turbolinks
