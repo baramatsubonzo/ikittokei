@@ -13,7 +13,7 @@
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-brand">
-          <%= link_to "IKITTOKEI ~時計を自慢して,ウットケイ~", root_path%>
+          <%= link_to "IKITTOKEI ~時計の転売サイト", root_path%>
           <% if logged_in?%>
           <ul class="navbar-nav navbar-right">
             <li class="nav-item" style="list-style:none;">
@@ -25,7 +25,16 @@
             <li class="nav-item" style="list-style:none;">
               <a class="nav-link"><%= link_to "ログアウト", logout_path, method: :delete %></a>
             </li>
+
+              <li class="nav-item" style="list-style:none;color:#A52A2A;">
+                <strong><p>@<%= current_user.name %></p></strong>
+
+            </li>
+
+
           </ul>
+
+
           <% else %>
           <ul class="navbar-nav navbar-right">
             <li class="nav-item" style="list-style:none;">
